@@ -209,7 +209,33 @@ footer .arrow-down {
     top: 15px;
     right: -115px;
 }
+header select{
+    background: transparent;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    appearance: none;
+    border-radius: 5px;
+}
 
+header .img {
+    filter: invert();
+    top: 8px;
+    left: 12px;
+}
+
+header .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    top: 15px;
+    right: -115px;
+}
+header option{
+    background-color: #fff;
+}
 /* mobile */
 
 @media only screen and (max-width: 992px) {
@@ -260,6 +286,9 @@ footer .arrow-down {
         height: 110vh;
     }
 
+    header select{
+        display: none;
+    }
     form .form-floating {
         width: 90%;
     }
